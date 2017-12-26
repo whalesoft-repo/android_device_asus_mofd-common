@@ -14,3 +14,9 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq ${ro.sys.perf.device.full}
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq ${ro.sys.perf.device.full}
     write /sys/devices/platform/dfrgx/devfreq/dfrgx/governor simple_ondemand
+
+# Ril Power Tweaks ( Mostly )
+on boot
+	setprop ro.ril.power_collapse 1
+	setprop ro.ril.disable.power.collapse 0
+	setprop pm.sleep_mode 1

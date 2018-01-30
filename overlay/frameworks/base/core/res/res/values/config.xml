@@ -86,7 +86,7 @@
     </string-array>
 
     <!-- Integer indicating wpa_supplicant scan interval in milliseconds -->
-    <integer name="config_wifi_supplicant_scan_interval">40000</integer>
+    <integer name="config_wifi_supplicant_scan_interval">180000</integer>
 
     <!-- Integer indicating wpa_supplicant scan interval when p2p is connected in milliseconds -->
     <integer name="config_wifi_scan_interval_p2p_connected">3600000</integer>

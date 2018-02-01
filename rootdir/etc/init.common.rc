@@ -52,6 +52,11 @@ on boot
     #enable kernel compaction
     write /proc/sys/vm/compact_memory 1
 
+    #Dalvik / ART Method Compiler Tweaks
+    setprop dalvik.vm.jitthreshold 2500
+    setprop dalvik.vm.jitprithreadweight 125
+    setprop dalvik.vm.jittransitionweight 250
+
 on fs
     mkdir /factory 0775 system system
     mkdir /config 0775 system system

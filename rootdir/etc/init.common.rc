@@ -2,6 +2,7 @@ import /init.watchdog.rc
 import /init.firmware.rc
 import /init.power.mofd_v1.rc
 import /init.zram.rc
+import /init.spectrum.rc
 
 on early-init
     # set permission for charger-mode
